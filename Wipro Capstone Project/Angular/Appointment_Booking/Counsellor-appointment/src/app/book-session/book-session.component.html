@@ -1,0 +1,19 @@
+<body>
+    <div class="container book-session-container">
+
+        <h2 class="section-title">Book a Session</h2>
+        <div class="card session-card">
+            <div class="card-body session-card-body">
+                <h4 class="card-title">Counsellor: {{ counsellor.counsellorName }}</h4>
+                <p class="card-text">Specialty: {{ counsellor.counsellorDesc }}</p>
+                <p class="card-text">Price: ₹{{ counsellor.counsellorPrice }}</p>
+
+                <label for="sessionDate" class="session-label">Select Date:</label>
+                <input type="date" id="sessionDate" [(ngModel)]="sessionDate" class="form-control session-input"
+                    required>
+
+                <button class="btn btn-success confirm-btn mt-3" (click)="confirmBooking()">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+</body>

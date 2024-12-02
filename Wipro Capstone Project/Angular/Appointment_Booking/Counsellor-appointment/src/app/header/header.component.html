@@ -1,0 +1,13 @@
+<header class="header">
+  <a routerLink="home"><img src="https://doccure.dreamstechnologies.com/angular/template/assets/img/logo-01.svg"></a>
+
+  <nav class="navbar">
+    <a *ngIf="!isLoggedIn" routerLink="login">Login</a>
+    <a *ngIf="isLoggedIn" routerLink="logout">Logout</a>
+    <a routerLink="admin">Admin</a>
+
+  </nav>
+
+  <div class="icons">
+  </div>
+</header>

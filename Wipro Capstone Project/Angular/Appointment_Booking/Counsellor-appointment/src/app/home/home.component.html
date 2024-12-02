@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b7926f3752.js" crossorigin="anonymous"></script>
+    <title>Consult Best Counsellors</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding-left: 5%;
+            background-image: url("/assets/images/dr.jpg");
+            background-size: cover;
+        }
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: -10%;
+        }
+
+        .welcome-text {
+            font-size: 60px;
+            font-family: monospace;
+            color: #4A90E2;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .shop-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .shop-button:hover {
+            background-color: #357ABD;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-content">
+        <h1 class="welcome-text">Consult Best Counsellors</h1>
+        <button class="shop-button" (click)="onClick()">Start a Consult</button>
+    </div>
+</body>
+
+</html>

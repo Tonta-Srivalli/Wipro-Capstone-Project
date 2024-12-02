@@ -1,0 +1,27 @@
+<div *ngIf="counsellor" class="gap">
+  <h2>Reviews for {{ counsellor.counsellorName }}</h2>
+  <p>{{ counsellor.counsellorDesc }}</p>
+  <img [src]="counsellor.counsellorImage" alt="Counsellor Image" />
+  <p>Price: ₹{{ counsellor.counsellorPrice }}</p>
+
+  <div *ngIf="reviews && reviews.length > 0; else noReviews">
+    <h3>Reviews</h3>
+    <ul>
+      <li *ngFor="let review of reviews">
+        <strong>Rating:</strong> {{ review.rating }}<br>
+        <strong>Review:</strong> {{ review.text }}
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #noReviews>
+    <p>No reviews yet. Be the first to leave a review!</p>
+  </ng-template>
+
+  <div>
+    <h3>Add Your Review</h3>
+    <textarea [(ngModel)]="newReviewText" placeholder="Write your review"></textarea>
+    <input type="number" [(ngModel)]="newReviewRating" placeholder="Rating (1-5)" min="1" max="5" />
+    <button (click)="submitReview()">Submit Review</button>
+  </div>
+</div>

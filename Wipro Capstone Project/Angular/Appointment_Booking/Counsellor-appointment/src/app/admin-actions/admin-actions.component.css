@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-section {
+    flex-shrink: 0;
+}
+
+.admin-image {
+    margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.action-container {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.action-container button {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.container-main {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.logout-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    font-weight: bold;
+}

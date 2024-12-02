@@ -1,0 +1,19 @@
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 300px;
+  background-color: transparent;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-image-login {
+  background-image: url("/assets/images/log.jpg");
+  background-size: cover;
+  height: 100vh;
+}
